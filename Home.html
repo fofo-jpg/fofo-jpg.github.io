@@ -67,6 +67,33 @@ input:focus, select:focus, textarea:focus { outline:none; border-color:var(--acc
   transform: translateY(-3px);         /*  */
   box-shadow: 0 8px 20px rgba(0,0,0,0.25); /*  */
 }
+/* للجوالات الصغيرة */
+@media (max-width: 768px) {
+  .book-grid {
+    grid-template-columns: 1fr; /* عرض كتاب واحد لكل صف */
+  }
+  .navbar {
+    flex-direction: column; /* شريط التنقل عمودي */
+    align-items: center;
+  }
+  .cta {
+    width: 80%; /* أزرار أعرض قليلاً للهاتف */
+  }
+}
+body {
+  background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794') no-repeat center center fixed;
+  background-size: cover;
+  color: #4b0082; /* أرجواني للخطوط */
+}
+.cta {
+  background: #ff66b2;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.navbar a:hover {
+  color: #ff66b2;
+}
+
+
   </style>
 </head>
 <body>
@@ -101,5 +128,8 @@ input:focus, select:focus, textarea:focus { outline:none; border-color:var(--acc
   <footer>
     © Shopping With Fofo — Demo store. All rights reserved.
   </footer>
+  <footer class="footer">
+  <p>📞 Contact us: <a href="tel:+212600000000">+212 693664739</a></p>
+</footer>
 </body>
 </html>
